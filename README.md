@@ -8,16 +8,16 @@ usage
 
 ```typescript
 import {
+  scrapyjs,
   EngineEvent,
+  EngineJob,
   engineSubject,
   jobSubject,
   puppeteerSubject,
   returnSubject,
-  scrapyjs,
-  threadSubject
+  threadSubject,
 } from "scrapyjs";
 import {concatMap, map} from "rxjs/operators";
-import {EngineJob} from "scrapyjs/engine";
 
 // awaiting top level await
 const runScrapy = async () =>

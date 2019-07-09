@@ -13,6 +13,6 @@ const engine = {
     jobSubject: engine_1.jobSubject,
     puppeteerSubject: engine_1.puppeteerSubject,
     returnSubject: engine_1.returnSubject,
-    threadSubject: engine_1.threadSubject
+    threadSubject: engine_1.threadSubject,
 };
 exports.scrapyjs = engine;

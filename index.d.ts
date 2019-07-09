@@ -1,4 +1,4 @@
-import { run, EngineEvent, engineSubject, jobSubject, returnSubject, puppeteerSubject, threadSubject } from "./engine";
+import { run, EngineEvent, engineSubject, jobSubject, returnSubject, puppeteerSubject, threadSubject, EngineJob } from "./engine";
 declare const engine: {
     run: (config: {
         [uuid: string]: {
@@ -18,4 +18,4 @@ declare const engine: {
     }]>;
     threadSubject: import("rxjs").Subject<string>;
 };
-export { engine as scrapyjs, run, EngineEvent, engineSubject, jobSubject, puppeteerSubject, returnSubject, threadSubject };
+export { engine as scrapyjs, run, EngineEvent, engineSubject, jobSubject, puppeteerSubject, returnSubject, threadSubject, EngineJob, };
