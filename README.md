@@ -1,5 +1,3 @@
-"# scrapy" 
-
 Welcome to ScrapyJS!
 
 Library for crawling the web.
