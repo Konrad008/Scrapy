@@ -22,7 +22,6 @@ import {concatMap, map} from "rxjs/operators";
 // awaiting top level await
 const runScrapy = async () =>
 {
-
   await scrapyjs.run({
     'uuid': {
       name: 'WP',
@@ -55,8 +54,8 @@ returnSubject.pipe(
  * This stream emmits job beeing executed ATM
  */
 jobSubject.pipe(
-  map((job: EngineJob) => job)
-)
+  map((job: EngineJob) => job),
+);
 
 /**
  * DEBUG
@@ -67,7 +66,5 @@ puppeteerSubject.subscribe({
 threadSubject.subscribe({
   next: info => console.log(info),
 });
-
-
 
 ```
